@@ -1,5 +1,4 @@
 plugins {
-    id 'java-library'
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
@@ -26,17 +25,15 @@ neoForge {
     runs {
         client {
             client()
-            gameDirectory = file('run')
         }
         
         server {
             server()
-            gameDirectory = file('run')
         }
         
         data {
             data()
-            gameDirectory = file('run')
+            
             programArguments.addAll '--mod', project.mod_id, 
                 '--all',
                 '--output', file('src/generated/resources/').getAbsolutePath(),
@@ -54,15 +51,14 @@ neoForge {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    mavenLocal()
+    mavenCentral()
 }
 
 dependencies {
     // NeoForge dependency is automatically added by the plugin
 }
 
-eclipse {
-    project {
-        name = project.mod_name + "-" + project.minecraft_version
-    }
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }
+

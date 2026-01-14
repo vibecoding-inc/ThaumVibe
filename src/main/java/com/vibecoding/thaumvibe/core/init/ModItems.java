@@ -26,7 +26,7 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> SALIS_MUNDUS = ITEMS.register("salis_mundus",
         () -> new Item(new Item.Properties()));
     
-    // Magical shards
+    // Magical shards - EARLY GAME
     public static final DeferredHolder<Item, Item> AIR_SHARD = ITEMS.register("air_shard",
         () -> new Item(new Item.Properties()));
     
@@ -43,6 +43,35 @@ public class ModItems {
         () -> new Item(new Item.Properties()));
     
     public static final DeferredHolder<Item, Item> ENTROPY_SHARD = ITEMS.register("entropy_shard",
+        () -> new Item(new Item.Properties()));
+    
+    // MIDDLE GAME - Vis crystals and essences
+    public static final DeferredHolder<Item, Item> VIS_CRYSTAL = ITEMS.register("vis_crystal",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> ALCHEMICAL_BRASS = ITEMS.register("alchemical_brass",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> THAUMIUM_INGOT = ITEMS.register("thaumium_ingot",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> NITOR = ITEMS.register("nitor",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> QUICKSILVER = ITEMS.register("quicksilver",
+        () -> new Item(new Item.Properties()));
+    
+    // LATE GAME - Advanced items
+    public static final DeferredHolder<Item, Item> VOID_METAL_INGOT = ITEMS.register("void_metal_ingot",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> PRIMORDIAL_PEARL = ITEMS.register("primordial_pearl",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> ELDRITCH_EYE = ITEMS.register("eldritch_eye",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> SANITY_CHECKER = ITEMS.register("sanity_checker",
         () -> new Item(new Item.Properties()));
     
     public static void register(IEventBus eventBus) {

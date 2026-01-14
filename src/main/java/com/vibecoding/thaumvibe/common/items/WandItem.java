@@ -1,5 +1,6 @@
 package com.vibecoding.thaumvibe.common.items;
 
+import com.vibecoding.thaumvibe.api.vis.VisStorage;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -13,8 +14,11 @@ import java.util.List;
 
 /**
  * The Wand - a magical tool for channeling Vis energy.
+ * Core tool in Thaumcraft used for crafting and casting.
  */
 public class WandItem extends Item {
+    private static final int MAX_VIS = 100;
+    private static final int RECHARGE_RATE = 1;
     
     public WandItem(Properties properties) {
         super(properties);
@@ -25,7 +29,19 @@ public class WandItem extends Item {
         ItemStack itemStack = player.getItemInHand(hand);
         
         if (!level.isClientSide) {
-            player.displayClientMessage(Component.literal("Wand charged with magical energy!"), true);
+            // Simulate Vis usage
+            VisStorage visStorage = new VisStorage(MAX_VIS, RECHARGE_RATE);
+            int visUsed = visStorage.extractVis(10, false);
+            
+            if (visUsed > 0) {
+                player.displayClientMessage(
+                    Component.literal("Wand discharged " + visUsed + " Vis! Remaining: " + 
+                    (MAX_VIS - visUsed) + "/" + MAX_VIS), 
+                    true
+                );
+            } else {
+                player.displayClientMessage(Component.literal("Wand is out of Vis!"), true);
+            }
         }
         
         return InteractionResultHolder.success(itemStack);
@@ -34,7 +50,8 @@ public class WandItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         tooltipComponents.add(Component.literal("A tool for channeling magical Vis"));
-        tooltipComponents.add(Component.literal("Durability: " + (stack.getMaxDamage() - stack.getDamageValue()) + "/" + stack.getMaxDamage()));
+        tooltipComponents.add(Component.literal("§9Vis: " + MAX_VIS + "/" + MAX_VIS));
+        tooltipComponents.add(Component.literal("§7Used in Arcane Workbench for crafting"));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
     
@@ -42,4 +59,11 @@ public class WandItem extends Item {
     public boolean isBarVisible(ItemStack stack) {
         return stack.getDamageValue() > 0;
     }
+    
+    @Override
+    public boolean isFoil(ItemStack stack) {
+        // Make wands have enchantment glint
+        return true;
+    }
 }
+

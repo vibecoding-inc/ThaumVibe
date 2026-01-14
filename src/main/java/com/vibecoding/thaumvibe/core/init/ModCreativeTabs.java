@@ -18,7 +18,7 @@ public class ModCreativeTabs {
             .title(Component.translatable("itemGroup.thaumvibe"))
             .icon(() -> new ItemStack(ModItems.THAUMONOMICON.get()))
             .displayItems((parameters, output) -> {
-                // Add all mod items to the creative tab
+                // EARLY GAME - Basic items
                 output.accept(ModItems.THAUMONOMICON.get());
                 output.accept(ModItems.THAUMOMETER.get());
                 output.accept(ModItems.WAND.get());
@@ -32,13 +32,37 @@ public class ModCreativeTabs {
                 output.accept(ModItems.ORDER_SHARD.get());
                 output.accept(ModItems.ENTROPY_SHARD.get());
                 
-                // Blocks
+                // MIDDLE GAME - Advanced materials
+                output.accept(ModItems.VIS_CRYSTAL.get());
+                output.accept(ModItems.ALCHEMICAL_BRASS.get());
+                output.accept(ModItems.THAUMIUM_INGOT.get());
+                output.accept(ModItems.NITOR.get());
+                output.accept(ModItems.QUICKSILVER.get());
+                
+                // LATE GAME - Eldritch items
+                output.accept(ModItems.VOID_METAL_INGOT.get());
+                output.accept(ModItems.PRIMORDIAL_PEARL.get());
+                output.accept(ModItems.ELDRITCH_EYE.get());
+                output.accept(ModItems.SANITY_CHECKER.get());
+                
+                // EARLY GAME - Blocks
                 output.accept(ModBlocks.CRUCIBLE.get());
                 output.accept(ModBlocks.RESEARCH_TABLE.get());
                 output.accept(ModBlocks.ARCANE_WORKBENCH.get());
-                output.accept(ModBlocks.INFUSION_ALTAR.get());
                 output.accept(ModBlocks.CINNABAR_ORE.get());
                 output.accept(ModBlocks.AMBER_ORE.get());
+                
+                // MIDDLE GAME - Blocks
+                output.accept(ModBlocks.INFUSION_ALTAR.get());
+                output.accept(ModBlocks.ALCHEMICAL_FURNACE.get());
+                output.accept(ModBlocks.ESSENTIA_SMELTERY.get());
+                output.accept(ModBlocks.SHIMMERLEAF.get());
+                output.accept(ModBlocks.GREATWOOD_LOG.get());
+                output.accept(ModBlocks.SILVERWOOD_LOG.get());
+                
+                // LATE GAME - Blocks
+                output.accept(ModBlocks.ELDRITCH_OBELISK.get());
+                output.accept(ModBlocks.FLUX_SCRUBBER.get());
             })
             .build());
     

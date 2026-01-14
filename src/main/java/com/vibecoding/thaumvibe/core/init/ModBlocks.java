@@ -15,7 +15,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = 
         DeferredRegister.create(Registries.BLOCK, ThaumVibe.MODID);
     
-    // Thaumcraft blocks
+    // EARLY GAME - Thaumcraft blocks
     public static final DeferredHolder<Block, Block> CRUCIBLE = BLOCKS.register("crucible",
         () -> new Block(BlockBehaviour.Properties.of()
             .strength(2.0f)
@@ -34,13 +34,40 @@ public class ModBlocks {
             .sound(SoundType.WOOD)
             .noOcclusion()));
     
+    // MIDDLE GAME - Advanced crafting
     public static final DeferredHolder<Block, Block> INFUSION_ALTAR = BLOCKS.register("infusion_altar",
         () -> new Block(BlockBehaviour.Properties.of()
             .strength(3.0f)
             .sound(SoundType.STONE)
             .noOcclusion()));
     
-    // Magical ores
+    public static final DeferredHolder<Block, Block> ALCHEMICAL_FURNACE = BLOCKS.register("alchemical_furnace",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.5f)
+            .sound(SoundType.STONE)
+            .lightLevel(state -> 13)
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> ESSENTIA_SMELTERY = BLOCKS.register("essentia_smeltery",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .noOcclusion()));
+    
+    // LATE GAME - Eldritch and advanced blocks
+    public static final DeferredHolder<Block, Block> ELDRITCH_OBELISK = BLOCKS.register("eldritch_obelisk",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(50.0f)
+            .sound(SoundType.STONE)
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> FLUX_SCRUBBER = BLOCKS.register("flux_scrubber",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(4.0f)
+            .sound(SoundType.METAL)
+            .noOcclusion()));
+    
+    // Magical ores - EARLY GAME
     public static final DeferredHolder<Block, Block> CINNABAR_ORE = BLOCKS.register("cinnabar_ore",
         () -> new Block(BlockBehaviour.Properties.of()
             .strength(3.0f)
@@ -50,6 +77,24 @@ public class ModBlocks {
         () -> new Block(BlockBehaviour.Properties.of()
             .strength(3.0f)
             .requiresCorrectToolForDrops()));
+    
+    // MIDDLE GAME ores
+    public static final DeferredHolder<Block, Block> SHIMMERLEAF = BLOCKS.register("shimmerleaf",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(0.0f)
+            .sound(SoundType.GRASS)
+            .lightLevel(state -> 7)
+            .noCollission()));
+    
+    public static final DeferredHolder<Block, Block> GREATWOOD_LOG = BLOCKS.register("greatwood_log",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(2.0f)
+            .sound(SoundType.WOOD)));
+    
+    public static final DeferredHolder<Block, Block> SILVERWOOD_LOG = BLOCKS.register("silverwood_log",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(2.0f)
+            .sound(SoundType.WOOD)));
     
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
