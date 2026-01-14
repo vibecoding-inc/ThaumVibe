@@ -1,8 +1,8 @@
 # ThaumVibe
-Vibecrafted Thaumcraft for MC 1.21.8
+Vibecrafted Thaumcraft for MC 1.21.8 with IndustrialCraft & BuildCraft Integration
 
 ## About
-ThaumVibe is a recreation of the classic Thaumcraft mod for modern Minecraft (1.21.1+) using NeoForge. This mod brings back the magical experience of Thaumaturgy with aspects, research, and mystical crafting.
+ThaumVibe is a recreation of the classic Thaumcraft mod for modern Minecraft (1.21.1+) using NeoForge. This mod brings back the magical experience of Thaumaturgy with aspects, research, and mystical crafting, now integrated with IndustrialCraft and BuildCraft technology systems for a unique magic-tech hybrid experience.
 
 ## Core Thaumcraft Concepts
 
@@ -85,6 +85,65 @@ Players must research magical discoveries in the Thaumonomicon to unlock new ite
 3. Build Eldritch Obelisks
 4. Manage flux and magical pollution with Flux Scrubbers
 5. Master all aspects of Thaumaturgy
+
+## IndustrialCraft Features
+
+### Power System
+ThaumVibe implements the **EU (Energy Units)** power system for electric machinery:
+- Generate power with Generators, Solar Panels, and Geothermal Generators
+- Store energy in BatBox (40,000 EU), MFE (600,000 EU), and MFSU (10,000,000 EU)
+- Transport power through Copper Cable, Gold Cable, and Glass Fiber Cable
+
+### Ores & Materials
+- **Copper Ore & Tin Ore**: Found in the world, can be macerated into dust
+- **Uranium Ore**: Rare ore for nuclear power
+- **Deepslate variants**: Found in deep underground
+- **Ingots**: Copper, Tin, Bronze, Steel, Uranium, Refined Iron
+- **Dusts**: Process ores in the Macerator for double output
+
+### Machines
+- **Macerator**: Grind ores into dust for double output
+- **Extractor**: Extract resources from items
+- **Compressor**: Compress materials into denser forms
+- **Electric Furnace**: Faster electric-powered smelting
+- **Recycler**: Convert unwanted items into scrap
+- **Nuclear Reactor**: Advanced power generation (use with caution!)
+
+### Components
+- **Electronic Circuit & Advanced Circuit**: Required for machine crafting
+- **RE-Battery & Advanced RE-Battery**: Portable energy storage
+- **Energy Crystal & Lapotron Crystal**: High-capacity energy storage
+
+## BuildCraft Features
+
+### Power System
+ThaumVibe implements the **MJ (Minecraft Joules)** power system for mechanical machinery:
+- Generate power with Stirling Engines, Combustion Engines, and Steam Engines
+- Transport power through Wooden, Cobblestone, Stone, and Gold Power Pipes
+
+### Automation
+- **Quarry**: Automatically mines a large area
+- **Pump**: Extracts fluids from the world
+- **Filler**: Automatically fills or clears areas
+- **Builder**: Constructs structures from blueprints
+- **Assembly Table**: Craft complex items with laser energy
+- **Advanced Crafting Table**: Enhanced crafting capabilities
+
+### Transport
+- **Transport Pipes**: Move items between inventories (Wooden, Cobblestone, Stone, Iron, Gold, Diamond)
+- **Fluid Pipes**: Transport liquids (Wooden, Cobblestone, Stone)
+- **Power Pipes**: Transfer MJ energy between machines
+- **Tank**: Store large amounts of fluids
+
+### Components
+- **Gears**: Wooden, Stone, Iron, Gold, Diamond - essential crafting components
+
+## Magic-Tech Integration
+Combine magical and technological systems:
+- Power Thaumcraft devices with IC2 energy
+- Use BuildCraft pipes to automate Thaumcraft crafting
+- Enhance machines with magical aspects
+- Create hybrid magical-technological systems
 
 ## Building
 This mod uses NeoForge for Minecraft 1.21.1+
