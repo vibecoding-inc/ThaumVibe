@@ -28,6 +28,12 @@ Aspects are fundamental magical elements that make up everything in the world. E
 9. **Potentia (Energy)** = Ordo + Ignis - Power and energy
 10. **Praecantatio (Magic)** = Vacuos + Potentia - Pure magical energy
 
+### Magitech Aspects (Tekkit-Inspired)
+11. **Machina (Machine)** = Motus + Metallum - Machines and automation
+12. **Instrumentum (Tool)** = Metallum + Ordo - Tools and instruments
+
+These aspects enable the creation of magical technology, bridging the gap between mysticism and industry.
+
 ## 2. Vis - Magical Energy
 
 ### What is Vis?
@@ -52,6 +58,7 @@ Vis is the magical energy that powers Thaumcraft devices. It flows through the w
 3. **Artifice** - Magical item creation and golems
 4. **Thaumaturgy** - Advanced magical knowledge
 5. **Eldritch** - Forbidden knowledge (dangerous but powerful)
+6. **Magitech** - Tekkit-inspired automation and industrial magic
 
 ### How Research Works
 1. Use the **Thaumometer** to scan items, blocks, and entities
@@ -129,6 +136,34 @@ Vis is the magical energy that powers Thaumcraft devices. It flows through the w
 - Too much forbidden knowledge affects sanity
 - Flux pollution can corrupt the world
 
+### Magitech Era - Automation (Days 20+, Tekkit-Inspired)
+**Objective**: Combine magic and technology for ultimate efficiency
+
+**Steps**:
+1. Research Magitech knowledge
+2. Build a Thaumic Generator for Vis production
+3. Set up a Vis network with Vis Conduits and Vis Relays
+4. Craft Essentia Tubes for automated essentia transport
+5. Create Vis Batteries for energy storage
+6. Build an Essentia Centrifuge for aspect separation
+7. Construct a Golem Workbench and create Golem Animation Cores
+8. Deploy an Arcane Quarry for automated mining
+9. Use Arcane Levitators for item transport
+
+**Unlocks**:
+- Automated resource gathering
+- Vis power networks
+- Golem automation
+- Industrial-scale essentia processing
+- Integration of magic with technology
+
+**Features**:
+- Golems can perform repetitive tasks
+- Vis networks distribute power efficiently
+- Quarries mine resources automatically
+- Centrifuges separate compound aspects
+- Complete automation of magical processes
+
 ## 5. Key Items and Their Uses
 
 ### Essential Tools
@@ -153,6 +188,13 @@ Vis is the magical energy that powers Thaumcraft devices. It flows through the w
 - **Eldritch Eye**: Allows perception of hidden things
 - **Sanity Checker**: Monitors mental stability
 
+### Magitech Materials (Tekkit-Inspired)
+- **Essentia Tube**: Transports essentia between machines
+- **Vis Conduit**: Channels Vis power across distances
+- **Arcane Levitator**: Moves items using magic
+- **Vis Battery**: Stores large quantities of Vis
+- **Golem Animation Core**: Heart of a magical golem
+
 ## 6. Key Blocks and Their Uses
 
 ### Early Game Stations
@@ -169,6 +211,13 @@ Vis is the magical energy that powers Thaumcraft devices. It flows through the w
 - **Eldritch Obelisk**: Portal to eldritch dimensions
 - **Flux Scrubber**: Removes magical pollution from the area
 
+### Magitech Stations (Tekkit-Inspired)
+- **Thaumic Generator**: Converts essentia into Vis power
+- **Essentia Centrifuge**: Separates compound aspects into components
+- **Arcane Quarry**: Automatically mines resources in an area
+- **Vis Relay**: Extends and distributes Vis power networks
+- **Golem Workbench**: Creates and programs magical golems
+
 ### Natural Blocks
 - **Cinnabar Ore**: Source of Quicksilver
 - **Amber Ore**: Contains preserved magical essence
@@ -183,7 +232,8 @@ Vis is the magical energy that powers Thaumcraft devices. It flows through the w
 3. **Research** → Unlock new recipes at Research Table
 4. **Craft** → Create magical items at Arcane Workbench
 5. **Advance** → Build better magical stations
-6. **Repeat** → Continue to more powerful magic
+6. **Automate** → Set up magitech systems for efficiency
+7. **Repeat** → Continue to more powerful magic
 
 ## 8. Tips for New Thaumaturges
 
@@ -197,14 +247,22 @@ Vis is the magical energy that powers Thaumcraft devices. It flows through the w
 8. Nitor makes permanent light sources
 9. Save Primordial Pearls for important crafting
 10. The Thaumonomicon is your friend - read it!
+11. **NEW**: Use Vis Relays to extend your power network
+12. **NEW**: Golems can automate repetitive tasks
+13. **NEW**: Essentia Tubes make alchemy much easier
+14. **NEW**: Arcane Quarries work best with Vis Batteries
+15. **NEW**: Combine magic and technology for maximum efficiency
 
 ## Implementation Status
-- ✅ Aspect system (16 aspects)
+- ✅ Aspect system (18 aspects including Machina and Instrumentum)
 - ✅ Vis storage system
-- ✅ Research framework
-- ✅ All progression tiers (Early/Mid/Late game items and blocks)
+- ✅ Research framework (6 categories including Magitech)
+- ✅ All progression tiers (Early/Mid/Late/Magitech items and blocks)
 - ✅ Core items (Wand, Thaumometer, Thaumonomicon)
+- ✅ Tekkit-inspired magitech items and blocks
 - ⏳ Block functionality (crafting logic)
 - ⏳ Research GUI
 - ⏳ Aspect scanning mechanics
 - ⏳ World generation (ores, trees)
+- ⏳ Golem AI and automation
+- ⏳ Vis network systems

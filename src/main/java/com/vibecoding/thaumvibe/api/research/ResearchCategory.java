@@ -8,7 +8,8 @@ public enum ResearchCategory {
     ALCHEMY("Alchemy", "Alchemical Studies"),
     ARTIFICE("Artifice", "Magical Crafting"),
     THAUMATURGY("Thaumaturgy", "Advanced Magic"),
-    ELDRITCH("Eldritch", "Forbidden Knowledge");
+    ELDRITCH("Eldritch", "Forbidden Knowledge"),
+    MAGITECH("Magitech", "Industrial Magic");
     
     private final String key;
     private final String displayName;

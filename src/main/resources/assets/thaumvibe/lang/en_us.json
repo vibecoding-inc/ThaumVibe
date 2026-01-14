@@ -24,6 +24,12 @@
   "item.thaumvibe.eldritch_eye": "Eldritch Eye",
   "item.thaumvibe.sanity_checker": "Sanity Checker",
   
+  "item.thaumvibe.essentia_tube": "Essentia Tube",
+  "item.thaumvibe.vis_conduit": "Vis Conduit",
+  "item.thaumvibe.arcane_levitator": "Arcane Levitator",
+  "item.thaumvibe.vis_battery": "Vis Battery",
+  "item.thaumvibe.golem_animation_core": "Golem Animation Core",
+  
   "block.thaumvibe.crucible": "Crucible",
   "block.thaumvibe.research_table": "Research Table",
   "block.thaumvibe.arcane_workbench": "Arcane Workbench",
@@ -37,6 +43,12 @@
   "block.thaumvibe.shimmerleaf": "Shimmerleaf",
   "block.thaumvibe.greatwood_log": "Greatwood Log",
   "block.thaumvibe.silverwood_log": "Silverwood Log",
+  
+  "block.thaumvibe.thaumic_generator": "Thaumic Generator",
+  "block.thaumvibe.essentia_centrifuge": "Essentia Centrifuge",
+  "block.thaumvibe.arcane_quarry": "Arcane Quarry",
+  "block.thaumvibe.vis_relay": "Vis Relay",
+  "block.thaumvibe.golem_workbench": "Golem Workbench",
   
   "aspect.thaumvibe.aer": "Aer (Air)",
   "aspect.thaumvibe.terra": "Terra (Earth)",
@@ -53,5 +65,7 @@
   "aspect.thaumvibe.victus": "Victus (Life)",
   "aspect.thaumvibe.mortuus": "Mortuus (Death)",
   "aspect.thaumvibe.potentia": "Potentia (Energy)",
-  "aspect.thaumvibe.praecantatio": "Praecantatio (Magic)"
+  "aspect.thaumvibe.praecantatio": "Praecantatio (Magic)",
+  "aspect.thaumvibe.machina": "Machina (Machine)",
+  "aspect.thaumvibe.instrumentum": "Instrumentum (Tool)"
 }

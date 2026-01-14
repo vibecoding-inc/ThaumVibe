@@ -2,7 +2,7 @@
 Vibecrafted Thaumcraft for MC 1.21.8
 
 ## About
-ThaumVibe is a recreation of the classic Thaumcraft mod for modern Minecraft (1.21.1+) using NeoForge. This mod brings back the magical experience of Thaumaturgy with aspects, research, and mystical crafting.
+ThaumVibe is a recreation of the classic Thaumcraft mod for modern Minecraft (1.21.1+) using NeoForge. This mod brings back the magical experience of Thaumaturgy with aspects, research, and mystical crafting, **with inspiration from Tekkit to add magitech automation and industrial magic**.
 
 ## Core Thaumcraft Concepts
 
@@ -10,6 +10,7 @@ ThaumVibe is a recreation of the classic Thaumcraft mod for modern Minecraft (1.
 Aspects are fundamental magical elements that make up all things. ThaumVibe includes:
 - **Primal Aspects**: Aer (Air), Terra (Earth), Ignis (Fire), Aqua (Water), Ordo (Order), Perditio (Entropy)
 - **Compound Aspects**: Combinations of primal aspects like Vacuos (Void), Lux (Light), Praecantatio (Magic), and more
+- **Magitech Aspects**: Machina (Machine), Instrumentum (Tool) - inspired by Tekkit's industrial automation
 
 ### Vis (Magical Energy)
 Vis is the magical energy that powers Thaumcraft devices and wands. It can be stored, channeled, and recharged.
@@ -85,6 +86,30 @@ Players must research magical discoveries in the Thaumonomicon to unlock new ite
 3. Build Eldritch Obelisks
 4. Manage flux and magical pollution with Flux Scrubbers
 5. Master all aspects of Thaumaturgy
+
+### Magitech Era (Tekkit-Inspired)
+**Goal**: Combine magic with technology for automation and efficiency
+
+**Key Items**:
+- **Essentia Tube**: Transport essentia between devices
+- **Vis Conduit**: Distribute Vis power across your base
+- **Arcane Levitator**: Magically move items
+- **Vis Battery**: Store large amounts of Vis
+- **Golem Animation Core**: Create magical servants
+
+**Key Blocks**:
+- **Thaumic Generator**: Generate Vis from essentia
+- **Essentia Centrifuge**: Separate compound aspects
+- **Arcane Quarry**: Automatically mine resources
+- **Vis Relay**: Extend Vis network range
+- **Golem Workbench**: Craft and program golems
+
+**Activities**:
+1. Build a Vis power network with relays and batteries
+2. Set up automated essentia processing
+3. Create golems to automate tasks
+4. Build an Arcane Quarry for resource gathering
+5. Integrate magical and technological systems
 
 ## Building
 This mod uses NeoForge for Minecraft 1.21.1+

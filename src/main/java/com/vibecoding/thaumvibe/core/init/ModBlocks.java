@@ -96,6 +96,39 @@ public class ModBlocks {
             .strength(2.0f)
             .sound(SoundType.WOOD)));
     
+    // TEKKIT-INSPIRED MAGITECH - Automation blocks
+    public static final DeferredHolder<Block, Block> THAUMIC_GENERATOR = BLOCKS.register("thaumic_generator",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.5f)
+            .sound(SoundType.METAL)
+            .lightLevel(state -> 10)
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> ESSENTIA_CENTRIFUGE = BLOCKS.register("essentia_centrifuge",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> ARCANE_QUARRY = BLOCKS.register("arcane_quarry",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(5.0f)
+            .sound(SoundType.METAL)
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> VIS_RELAY = BLOCKS.register("vis_relay",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(2.0f)
+            .sound(SoundType.GLASS)
+            .lightLevel(state -> 5)
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> GOLEM_WORKBENCH = BLOCKS.register("golem_workbench",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(2.5f)
+            .sound(SoundType.WOOD)
+            .noOcclusion()));
+    
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
         

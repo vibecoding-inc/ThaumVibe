@@ -35,6 +35,10 @@ public class Aspect {
     public static final Aspect POTENTIA = new Aspect("potentia", 0xC0FFFF, "Energy", ORDO, IGNIS);
     public static final Aspect PRAECANTATIO = new Aspect("praecantatio", 0xCF00FF, "Magic", VACUOS, POTENTIA);
     
+    // Tekkit-inspired aspects for magitech automation
+    public static final Aspect MACHINA = new Aspect("machina", 0x8080A0, "Machine", MOTUS, METALLUM);
+    public static final Aspect INSTRUMENTUM = new Aspect("instrumentum", 0xA0A0C0, "Tool", METALLUM, ORDO);
+    
     private Aspect(String tag, int color, String name, Aspect... components) {
         this.tag = tag;
         this.color = color;

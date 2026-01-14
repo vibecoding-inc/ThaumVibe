@@ -11,9 +11,10 @@
 ### ✅ Core Thaumcraft Concepts
 
 #### 1. Aspect System (`api/aspects/`)
-- **Aspect.java**: 16 total aspects
+- **Aspect.java**: 18 total aspects
   - 6 Primal: Aer, Terra, Ignis, Aqua, Ordo, Perditio
   - 10 Compound: Vacuos, Lux, Motus, Gelum, Vitreus, Metallum, Victus, Mortuus, Potentia, Praecantatio
+  - 2 Magitech (Tekkit-inspired): Machina, Instrumentum
 - **AspectList.java**: Collections for managing multiple aspects with amounts
 - Full color coding for each aspect
 
@@ -26,7 +27,7 @@
 
 #### 3. Research System (`api/research/`)
 - **Research.java**: Builder pattern for creating research entries
-- **ResearchCategory.java**: 5 categories (Basics, Alchemy, Artifice, Thaumaturgy, Eldritch)
+- **ResearchCategory.java**: 6 categories (Basics, Alchemy, Artifice, Thaumaturgy, Eldritch, Magitech)
 - **PlayerResearch.java**: Tracks player progress
   - Completed research
   - Known aspects
@@ -54,7 +55,14 @@
 18. Eldritch Eye - Forbidden sight
 19. Sanity Checker - Mental stability monitor
 
-**Total: 19 items**
+#### Magitech (5 items - Tekkit-Inspired)
+20. Essentia Tube - Essentia transport
+21. Vis Conduit - Vis distribution
+22. Arcane Levitator - Item movement
+23. Vis Battery - Vis storage
+24. Golem Animation Core - Golem creation
+
+**Total: 24 items**
 
 ### ✅ Blocks by Game Stage
 
@@ -77,19 +85,26 @@
 12. Eldritch Obelisk - Dimensional portal
 13. Flux Scrubber - Pollution cleaner
 
-**Total: 13 blocks**
+#### Magitech (5 blocks - Tekkit-Inspired)
+14. Thaumic Generator - Vis generation
+15. Essentia Centrifuge - Aspect separation
+16. Arcane Quarry - Automated mining
+17. Vis Relay - Power distribution
+18. Golem Workbench - Golem crafting
+
+**Total: 18 blocks**
 
 ### ✅ Creative Mode Integration
 - Custom creative tab "ThaumVibe"
-- All 19 items organized by progression
-- All 13 blocks with auto-generated BlockItems
+- All 24 items organized by progression
+- All 18 blocks with auto-generated BlockItems
 - Thaumonomicon as tab icon
 
 ### ✅ Localization
 - Complete English (en_us.json) with:
-  - All item names
-  - All block names
-  - All aspect names with descriptions
+  - All item names (24 items)
+  - All block names (18 blocks)
+  - All aspect names with descriptions (18 aspects)
   - Creative tab name
 
 ### ✅ Documentation
@@ -120,6 +135,15 @@ Research Eldritch Knowledge → Craft Void Metal →
 Create Primordial Pearls → Build Eldritch Obelisks →
 Obtain Eldritch Eye → Monitor Sanity →
 Manage Flux Pollution
+```
+
+### Magitech Flow (Tekkit-Inspired)
+```
+Research Magitech → Build Thaumic Generator →
+Set up Vis Network (Conduits + Relays) →
+Create Golem Animation Cores → Build Golem Workbench →
+Deploy Arcane Quarry → Automate with Essentia Tubes →
+Use Essentia Centrifuge for Processing
 ```
 
 ## Technical Implementation
@@ -205,12 +229,12 @@ com.vibecoding.thaumvibe/
 
 ## Content Statistics
 - **Java Files**: 12 classes
-- **Items**: 19 unique items (6 early, 5 mid, 4 late, 4 basic)
-- **Blocks**: 13 unique blocks (5 early, 6 mid, 2 late)
-- **Aspects**: 16 aspects (6 primal, 10 compound)
-- **Research Categories**: 5 categories
-- **Progression Stages**: 3 distinct stages
-- **Lines of Code**: ~2,500+ lines
+- **Items**: 24 unique items (6 early, 5 mid, 4 late, 5 magitech, 4 basic)
+- **Blocks**: 18 unique blocks (5 early, 6 mid, 2 late, 5 magitech)
+- **Aspects**: 18 aspects (6 primal, 10 compound, 2 magitech)
+- **Research Categories**: 6 categories (including Magitech)
+- **Progression Stages**: 4 distinct stages (Early/Mid/Late/Magitech)
+- **Lines of Code**: ~2,800+ lines
 
 ## Schematic Alignment with Original Thaumcraft
 
@@ -232,6 +256,27 @@ com.vibecoding.thaumvibe/
 3. Builder patterns for extensibility
 4. Cleaner API separation
 5. Type-safe aspect handling
+6. **Tekkit-inspired magitech integration** - Combines magic with automation
+
+## Tekkit Integration
+
+### What is Tekkit?
+Tekkit was a legendary Minecraft modpack that combined technological mods like BuildCraft, IndustrialCraft, and Thermal Expansion to create automated industrial systems. ThaumVibe draws inspiration from this by adding **magitech** - the fusion of magic and technology.
+
+### Key Tekkit-Inspired Features
+1. **Automation**: Golems, quarries, and tubes automate magical processes
+2. **Power Networks**: Vis conduits and relays distribute magical energy like RF/EU systems
+3. **Industrial Processing**: Centrifuges and generators for mass production
+4. **Energy Storage**: Vis batteries store power for on-demand usage
+5. **Item Transport**: Essentia tubes and arcane levitators move materials
+
+### Magitech vs Traditional Thaumcraft
+- **Traditional**: Manual alchemy, individual crafting, personal magic
+- **Magitech**: Automated systems, networked power, industrial scale
+- **Balance**: Magitech requires late-game research and significant resources
+
+### Design Philosophy
+ThaumVibe maintains Thaumcraft's mystical feel while adding optional automation for players who enjoy Tekkit-style engineering. You can play purely magical or go full industrial - the choice is yours.
 
 ## Conclusion
-ThaumVibe successfully recreates the schematic foundation of Thaumcraft for modern Minecraft. All core concepts are present with proper progression from early to late game. The codebase is well-structured, documented, and ready for further development of gameplay mechanics.
+ThaumVibe successfully recreates the schematic foundation of Thaumcraft for modern Minecraft **with Tekkit-inspired magitech enhancements**. All core concepts are present with proper progression from early to late game, plus an optional automation layer inspired by the industrial mods of Tekkit. The codebase is well-structured, documented, and ready for further development of gameplay mechanics.

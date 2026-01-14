@@ -45,6 +45,13 @@ public class ModCreativeTabs {
                 output.accept(ModItems.ELDRITCH_EYE.get());
                 output.accept(ModItems.SANITY_CHECKER.get());
                 
+                // TEKKIT-INSPIRED - Magitech items
+                output.accept(ModItems.ESSENTIA_TUBE.get());
+                output.accept(ModItems.VIS_CONDUIT.get());
+                output.accept(ModItems.ARCANE_LEVITATOR.get());
+                output.accept(ModItems.VIS_BATTERY.get());
+                output.accept(ModItems.GOLEM_ANIMATION_CORE.get());
+                
                 // EARLY GAME - Blocks
                 output.accept(ModBlocks.CRUCIBLE.get());
                 output.accept(ModBlocks.RESEARCH_TABLE.get());
@@ -63,6 +70,13 @@ public class ModCreativeTabs {
                 // LATE GAME - Blocks
                 output.accept(ModBlocks.ELDRITCH_OBELISK.get());
                 output.accept(ModBlocks.FLUX_SCRUBBER.get());
+                
+                // TEKKIT-INSPIRED - Magitech blocks
+                output.accept(ModBlocks.THAUMIC_GENERATOR.get());
+                output.accept(ModBlocks.ESSENTIA_CENTRIFUGE.get());
+                output.accept(ModBlocks.ARCANE_QUARRY.get());
+                output.accept(ModBlocks.VIS_RELAY.get());
+                output.accept(ModBlocks.GOLEM_WORKBENCH.get());
             })
             .build());
     

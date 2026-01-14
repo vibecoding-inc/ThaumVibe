@@ -74,6 +74,22 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> SANITY_CHECKER = ITEMS.register("sanity_checker",
         () -> new Item(new Item.Properties()));
     
+    // TEKKIT-INSPIRED MAGITECH - Automation and technology integration
+    public static final DeferredHolder<Item, Item> ESSENTIA_TUBE = ITEMS.register("essentia_tube",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> VIS_CONDUIT = ITEMS.register("vis_conduit",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> ARCANE_LEVITATOR = ITEMS.register("arcane_levitator",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> VIS_BATTERY = ITEMS.register("vis_battery",
+        () -> new Item(new Item.Properties()));
+    
+    public static final DeferredHolder<Item, Item> GOLEM_ANIMATION_CORE = ITEMS.register("golem_animation_core",
+        () -> new Item(new Item.Properties()));
+    
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
