@@ -5,6 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -87,12 +88,12 @@ public class ModBlocks {
             .noCollission()));
     
     public static final DeferredHolder<Block, Block> GREATWOOD_LOG = BLOCKS.register("greatwood_log",
-        () -> new Block(BlockBehaviour.Properties.of()
+        () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
             .strength(2.0f)
             .sound(SoundType.WOOD)));
     
     public static final DeferredHolder<Block, Block> SILVERWOOD_LOG = BLOCKS.register("silverwood_log",
-        () -> new Block(BlockBehaviour.Properties.of()
+        () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
             .strength(2.0f)
             .sound(SoundType.WOOD)));
     
