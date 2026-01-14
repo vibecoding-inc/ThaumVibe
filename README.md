@@ -86,6 +86,40 @@ Players must research magical discoveries in the Thaumonomicon to unlock new ite
 4. Manage flux and magical pollution with Flux Scrubbers
 5. Master all aspects of Thaumaturgy
 
+## ComputerCraft Integration
+
+ThaumVibe includes **ThaumScript**, a comprehensive scripting API for ComputerCraft that allows you to automate and control all ThaumVibe magical devices programmatically.
+
+### Features
+- **Automate Alchemy**: Control crucibles and essentia processing
+- **Manage Vis**: Monitor and optimize magical energy usage
+- **Craft Items**: Automate arcane workbench operations
+- **Control Infusions**: Manage complex infusion rituals
+- **Scan Blocks**: Discover aspects programmatically
+- **Track Research**: Monitor research progress
+
+### Quick Example
+
+```lua
+-- Connect to an Arcane Workbench
+local workbench = peripheral.find("arcane_workbench")
+
+-- Check Vis level
+local vis = workbench.getVis()
+print("Current Vis: " .. vis)
+
+-- Craft a wand
+if workbench.hasEnoughVis(50) then
+    workbench.craftArcane("thaumvibe:wand")
+end
+```
+
+### Documentation
+
+- **[ComputerCraft API Reference](COMPUTERCRAFT_API.md)** - Complete API documentation
+- **[ThaumScript Language Guide](THAUMSCRIPT_GUIDE.md)** - Language syntax and patterns
+- **[Integration Guide](INTEGRATION_GUIDE.md)** - Tutorials and examples
+
 ## Building
 This mod uses NeoForge for Minecraft 1.21.1+
 
@@ -97,6 +131,7 @@ This mod uses NeoForge for Minecraft 1.21.1+
 1. Install Minecraft 1.21.1
 2. Install NeoForge 21.1.73+
 3. Place the built JAR in your `mods` folder
+4. (Optional) Install ComputerCraft for scripting support
 
 ## License
 MIT
