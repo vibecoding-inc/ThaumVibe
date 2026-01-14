@@ -1,8 +1,8 @@
 # ThaumVibe
-Vibecrafted Thaumcraft for MC 1.21.8
+Vibecrafted Thaumcraft for MC 1.20.1
 
 ## About
-ThaumVibe is a recreation of the classic Thaumcraft mod for modern Minecraft (1.21.1+) using NeoForge. This mod brings back the magical experience of Thaumaturgy with aspects, research, and mystical crafting.
+ThaumVibe is a recreation of the classic Thaumcraft mod for modern Minecraft (1.20.1) using Forge. This mod brings back the magical experience of Thaumaturgy with aspects, research, and mystical crafting.
 
 ## Core Thaumcraft Concepts
 
@@ -87,15 +87,15 @@ Players must research magical discoveries in the Thaumonomicon to unlock new ite
 5. Master all aspects of Thaumaturgy
 
 ## Building
-This mod uses NeoForge for Minecraft 1.21.1+
+This mod uses Forge for Minecraft 1.20.1
 
 ```bash
 ./gradlew build
 ```
 
 ## Installation
-1. Install Minecraft 1.21.1
-2. Install NeoForge 21.1.73+
+1. Install Minecraft 1.20.1
+2. Install Forge 47.3.0+
 3. Place the built JAR in your `mods` folder
 
 ## License
