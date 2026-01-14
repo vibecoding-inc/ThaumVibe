@@ -1,0 +1,33 @@
+{
+  "name": "thaumvibe-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for ThaumVibe - Minecraft Thaumcraft Mod",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "thaumvibe-mcp-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx mcp-server/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "minecraft",
+    "thaumcraft",
+    "thaumvibe",
+    "mcp-server"
+  ],
+  "author": "VibeCoding Inc.",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.8",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
