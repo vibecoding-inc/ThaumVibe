@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "thaumvibe:block/greatwood_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "thaumvibe:block/greatwood_log"
+    },
+    "axis=z": {
+      "model": "thaumvibe:block/greatwood_log",
+      "x": 90
+    }
+  }
+}
