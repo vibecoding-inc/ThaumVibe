@@ -98,5 +98,26 @@ This mod uses NeoForge for Minecraft 1.21.1+
 2. Install NeoForge 21.1.73+
 3. Place the built JAR in your `mods` folder
 
+## MCP Server
+
+ThaumVibe includes a Model Context Protocol (MCP) server that allows AI assistants to access comprehensive information about the mod's mechanics, items, blocks, and progression.
+
+**Features:**
+- Query aspects, items, and blocks
+- Get progression guides
+- Understand research categories
+- Learn crafting paths
+
+**Quick Start:**
+```bash
+npm install
+npm run build
+npm start
+```
+
+For detailed setup and usage instructions, see:
+- [MCP_SERVER.md](MCP_SERVER.md) - Installation and configuration
+- [MCP_EXAMPLES.md](MCP_EXAMPLES.md) - Example usage and queries
+
 ## License
 MIT
