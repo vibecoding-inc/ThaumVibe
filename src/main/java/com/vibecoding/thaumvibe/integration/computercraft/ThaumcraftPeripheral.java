@@ -13,6 +13,26 @@ import java.util.Map;
  */
 public class ThaumcraftPeripheral {
     
+    private static final String[] PRIMAL_ASPECTS = {"aer", "terra", "ignis", "aqua", "ordo", "perditio"};
+    private static final String[] COMPOUND_ASPECTS = {"vacuos", "lux", "motus", "gelum", "vitreus", 
+                                                       "metallum", "victus", "mortuus", "potentia", "praecantatio"};
+    
+    private static final Map<String, String[]> ASPECT_COMPONENTS;
+    
+    static {
+        ASPECT_COMPONENTS = new HashMap<>();
+        ASPECT_COMPONENTS.put("vacuos", new String[]{"aer", "perditio"});
+        ASPECT_COMPONENTS.put("lux", new String[]{"aer", "ignis"});
+        ASPECT_COMPONENTS.put("motus", new String[]{"aer", "ordo"});
+        ASPECT_COMPONENTS.put("gelum", new String[]{"ignis", "perditio"});
+        ASPECT_COMPONENTS.put("vitreus", new String[]{"terra", "ordo"});
+        ASPECT_COMPONENTS.put("metallum", new String[]{"terra", "ordo"});
+        ASPECT_COMPONENTS.put("victus", new String[]{"aqua", "terra"});
+        ASPECT_COMPONENTS.put("mortuus", new String[]{"aqua", "perditio"});
+        ASPECT_COMPONENTS.put("potentia", new String[]{"ordo", "ignis"});
+        ASPECT_COMPONENTS.put("praecantatio", new String[]{"vacuos", "potentia"});
+    }
+    
     private final Level level;
     private final BlockPos pos;
     private final BlockEntity blockEntity;
@@ -168,7 +188,7 @@ public class ThaumcraftPeripheral {
      * @return Array of primal aspect names
      */
     public String[] getPrimalAspects() {
-        return new String[]{"aer", "terra", "ignis", "aqua", "ordo", "perditio"};
+        return PRIMAL_ASPECTS;
     }
     
     /**
@@ -176,8 +196,7 @@ public class ThaumcraftPeripheral {
      * @return Array of compound aspect names
      */
     public String[] getCompoundAspects() {
-        return new String[]{"vacuos", "lux", "motus", "gelum", "vitreus", 
-                           "metallum", "victus", "mortuus", "potentia", "praecantatio"};
+        return COMPOUND_ASPECTS;
     }
     
     /**
@@ -186,18 +205,6 @@ public class ThaumcraftPeripheral {
      * @return Array of component aspect names
      */
     public String[] getAspectComponents(String aspectName) {
-        // Placeholder - would return actual component aspects
-        Map<String, String[]> components = new HashMap<>();
-        components.put("vacuos", new String[]{"aer", "perditio"});
-        components.put("lux", new String[]{"aer", "ignis"});
-        components.put("motus", new String[]{"aer", "ordo"});
-        components.put("gelum", new String[]{"ignis", "perditio"});
-        components.put("vitreus", new String[]{"terra", "ordo"});
-        components.put("metallum", new String[]{"terra", "ordo"});
-        components.put("victus", new String[]{"aqua", "terra"});
-        components.put("mortuus", new String[]{"aqua", "perditio"});
-        components.put("potentia", new String[]{"ordo", "ignis"});
-        components.put("praecantatio", new String[]{"vacuos", "potentia"});
-        return components.getOrDefault(aspectName, new String[]{});
+        return ASPECT_COMPONENTS.getOrDefault(aspectName, new String[]{});
     }
 }
