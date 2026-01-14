@@ -1,0 +1,39 @@
+{
+  "itemGroup.thaumvibe": "ThaumVibe",
+  
+  "item.thaumvibe.thaumonomicon": "Thaumonomicon",
+  "item.thaumvibe.thaumometer": "Thaumometer",
+  "item.thaumvibe.wand": "Wand",
+  "item.thaumvibe.salis_mundus": "Salis Mundus",
+  
+  "item.thaumvibe.air_shard": "Air Crystal Shard",
+  "item.thaumvibe.fire_shard": "Fire Crystal Shard",
+  "item.thaumvibe.water_shard": "Water Crystal Shard",
+  "item.thaumvibe.earth_shard": "Earth Crystal Shard",
+  "item.thaumvibe.order_shard": "Order Crystal Shard",
+  "item.thaumvibe.entropy_shard": "Entropy Crystal Shard",
+  
+  "block.thaumvibe.crucible": "Crucible",
+  "block.thaumvibe.research_table": "Research Table",
+  "block.thaumvibe.arcane_workbench": "Arcane Workbench",
+  "block.thaumvibe.infusion_altar": "Infusion Altar",
+  "block.thaumvibe.cinnabar_ore": "Cinnabar Ore",
+  "block.thaumvibe.amber_ore": "Amber Ore",
+  
+  "aspect.thaumvibe.aer": "Aer (Air)",
+  "aspect.thaumvibe.terra": "Terra (Earth)",
+  "aspect.thaumvibe.ignis": "Ignis (Fire)",
+  "aspect.thaumvibe.aqua": "Aqua (Water)",
+  "aspect.thaumvibe.ordo": "Ordo (Order)",
+  "aspect.thaumvibe.perditio": "Perditio (Entropy)",
+  "aspect.thaumvibe.vacuos": "Vacuos (Void)",
+  "aspect.thaumvibe.lux": "Lux (Light)",
+  "aspect.thaumvibe.motus": "Motus (Motion)",
+  "aspect.thaumvibe.gelum": "Gelum (Ice)",
+  "aspect.thaumvibe.vitreus": "Vitreus (Crystal)",
+  "aspect.thaumvibe.metallum": "Metallum (Metal)",
+  "aspect.thaumvibe.victus": "Victus (Life)",
+  "aspect.thaumvibe.mortuus": "Mortuus (Death)",
+  "aspect.thaumvibe.potentia": "Potentia (Energy)",
+  "aspect.thaumvibe.praecantatio": "Praecantatio (Magic)"
+}

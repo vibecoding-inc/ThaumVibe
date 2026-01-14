@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="thaumvibe"
+version="1.0.0"
+displayName="ThaumVibe"
+description='''A recreation of Thaumcraft for modern Minecraft'''
+authors="VibeCoding Inc"
+
+[[dependencies.thaumvibe]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1,22)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.thaumvibe]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1,1.22)"
+    ordering="NONE"
+    side="BOTH"
