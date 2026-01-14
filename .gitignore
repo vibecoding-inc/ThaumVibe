@@ -28,3 +28,12 @@ crash-reports/
 
 # Generated resources
 src/generated/
+
+# Node.js / MCP Server
+node_modules/
+dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
