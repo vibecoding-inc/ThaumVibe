@@ -96,6 +96,200 @@ public class ModBlocks {
             .strength(2.0f)
             .sound(SoundType.WOOD)));
     
+    // ========== INDUSTRIALCRAFT BLOCKS ==========
+    
+    // IC2 Ores
+    public static final DeferredHolder<Block, Block> COPPER_ORE = BLOCKS.register("copper_ore",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .requiresCorrectToolForDrops()));
+    
+    public static final DeferredHolder<Block, Block> TIN_ORE = BLOCKS.register("tin_ore",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .requiresCorrectToolForDrops()));
+    
+    public static final DeferredHolder<Block, Block> URANIUM_ORE = BLOCKS.register("uranium_ore",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .requiresCorrectToolForDrops()));
+    
+    public static final DeferredHolder<Block, Block> DEEPSLATE_COPPER_ORE = BLOCKS.register("deepslate_copper_ore",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(4.5f)
+            .requiresCorrectToolForDrops()
+            .sound(SoundType.DEEPSLATE)));
+    
+    public static final DeferredHolder<Block, Block> DEEPSLATE_TIN_ORE = BLOCKS.register("deepslate_tin_ore",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(4.5f)
+            .requiresCorrectToolForDrops()
+            .sound(SoundType.DEEPSLATE)));
+    
+    public static final DeferredHolder<Block, Block> DEEPSLATE_URANIUM_ORE = BLOCKS.register("deepslate_uranium_ore",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(4.5f)
+            .requiresCorrectToolForDrops()
+            .sound(SoundType.DEEPSLATE)));
+    
+    // IC2 Machines
+    public static final DeferredHolder<Block, Block> MACERATOR = BLOCKS.register("macerator",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> EXTRACTOR = BLOCKS.register("extractor",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> COMPRESSOR = BLOCKS.register("compressor",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> ELECTRIC_FURNACE = BLOCKS.register("electric_furnace",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> RECYCLER = BLOCKS.register("recycler",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    // IC2 Energy Storage
+    public static final DeferredHolder<Block, Block> BATBOX = BLOCKS.register("batbox",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> MFE = BLOCKS.register("mfe",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> MFSU = BLOCKS.register("mfsu",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    // IC2 Generators
+    public static final DeferredHolder<Block, Block> GENERATOR = BLOCKS.register("generator",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> SOLAR_PANEL = BLOCKS.register("solar_panel",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(2.0f)
+            .sound(SoundType.METAL)
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> GEOTHERMAL_GENERATOR = BLOCKS.register("geothermal_generator",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> NUCLEAR_REACTOR = BLOCKS.register("nuclear_reactor",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(5.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    // ========== BUILDCRAFT BLOCKS ==========
+    
+    // BC Engines
+    public static final DeferredHolder<Block, Block> STIRLING_ENGINE = BLOCKS.register("stirling_engine",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> COMBUSTION_ENGINE = BLOCKS.register("combustion_engine",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> STEAM_ENGINE = BLOCKS.register("steam_engine",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    // BC Machines
+    public static final DeferredHolder<Block, Block> QUARRY = BLOCKS.register("quarry",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(5.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> PUMP = BLOCKS.register("pump",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> FILLER = BLOCKS.register("filler",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> BUILDER = BLOCKS.register("builder",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(3.0f)
+            .sound(SoundType.METAL)
+            .requiresCorrectToolForDrops()
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> ASSEMBLY_TABLE = BLOCKS.register("assembly_table",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(2.5f)
+            .sound(SoundType.METAL)
+            .noOcclusion()));
+    
+    public static final DeferredHolder<Block, Block> ADVANCED_CRAFTING_TABLE = BLOCKS.register("advanced_crafting_table",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(2.5f)
+            .sound(SoundType.WOOD)
+            .noOcclusion()));
+    
+    // BC Storage
+    public static final DeferredHolder<Block, Block> TANK = BLOCKS.register("tank",
+        () -> new Block(BlockBehaviour.Properties.of()
+            .strength(1.5f)
+            .sound(SoundType.GLASS)
+            .noOcclusion()));
+    
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
         

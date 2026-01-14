@@ -53,5 +53,84 @@
   "aspect.thaumvibe.victus": "Victus (Life)",
   "aspect.thaumvibe.mortuus": "Mortuus (Death)",
   "aspect.thaumvibe.potentia": "Potentia (Energy)",
-  "aspect.thaumvibe.praecantatio": "Praecantatio (Magic)"
+  "aspect.thaumvibe.praecantatio": "Praecantatio (Magic)",
+  
+  "item.thaumvibe.copper_ingot": "Copper Ingot",
+  "item.thaumvibe.tin_ingot": "Tin Ingot",
+  "item.thaumvibe.bronze_ingot": "Bronze Ingot",
+  "item.thaumvibe.steel_ingot": "Steel Ingot",
+  "item.thaumvibe.uranium_ingot": "Uranium Ingot",
+  "item.thaumvibe.refined_iron": "Refined Iron",
+  
+  "item.thaumvibe.copper_cable": "Copper Cable",
+  "item.thaumvibe.gold_cable": "Gold Cable",
+  "item.thaumvibe.glass_fiber_cable": "Glass Fiber Cable",
+  "item.thaumvibe.electronic_circuit": "Electronic Circuit",
+  "item.thaumvibe.advanced_circuit": "Advanced Circuit",
+  "item.thaumvibe.battery": "RE-Battery",
+  "item.thaumvibe.advanced_battery": "Advanced RE-Battery",
+  "item.thaumvibe.energy_crystal": "Energy Crystal",
+  "item.thaumvibe.lapotron_crystal": "Lapotron Crystal",
+  
+  "item.thaumvibe.iron_dust": "Iron Dust",
+  "item.thaumvibe.gold_dust": "Gold Dust",
+  "item.thaumvibe.copper_dust": "Copper Dust",
+  "item.thaumvibe.tin_dust": "Tin Dust",
+  "item.thaumvibe.bronze_dust": "Bronze Dust",
+  
+  "item.thaumvibe.wooden_gear": "Wooden Gear",
+  "item.thaumvibe.stone_gear": "Stone Gear",
+  "item.thaumvibe.iron_gear": "Iron Gear",
+  "item.thaumvibe.gold_gear": "Gold Gear",
+  "item.thaumvibe.diamond_gear": "Diamond Gear",
+  
+  "item.thaumvibe.wooden_transport_pipe": "Wooden Transport Pipe",
+  "item.thaumvibe.cobblestone_transport_pipe": "Cobblestone Transport Pipe",
+  "item.thaumvibe.stone_transport_pipe": "Stone Transport Pipe",
+  "item.thaumvibe.iron_transport_pipe": "Iron Transport Pipe",
+  "item.thaumvibe.gold_transport_pipe": "Golden Transport Pipe",
+  "item.thaumvibe.diamond_transport_pipe": "Diamond Transport Pipe",
+  
+  "item.thaumvibe.wooden_fluid_pipe": "Wooden Fluid Pipe",
+  "item.thaumvibe.cobblestone_fluid_pipe": "Cobblestone Fluid Pipe",
+  "item.thaumvibe.stone_fluid_pipe": "Stone Fluid Pipe",
+  
+  "item.thaumvibe.wooden_power_pipe": "Wooden Power Pipe",
+  "item.thaumvibe.cobblestone_power_pipe": "Cobblestone Power Pipe",
+  "item.thaumvibe.stone_power_pipe": "Stone Power Pipe",
+  "item.thaumvibe.gold_power_pipe": "Golden Power Pipe",
+  
+  "block.thaumvibe.copper_ore": "Copper Ore",
+  "block.thaumvibe.tin_ore": "Tin Ore",
+  "block.thaumvibe.uranium_ore": "Uranium Ore",
+  "block.thaumvibe.deepslate_copper_ore": "Deepslate Copper Ore",
+  "block.thaumvibe.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.thaumvibe.deepslate_uranium_ore": "Deepslate Uranium Ore",
+  
+  "block.thaumvibe.macerator": "Macerator",
+  "block.thaumvibe.extractor": "Extractor",
+  "block.thaumvibe.compressor": "Compressor",
+  "block.thaumvibe.electric_furnace": "Electric Furnace",
+  "block.thaumvibe.recycler": "Recycler",
+  
+  "block.thaumvibe.batbox": "BatBox",
+  "block.thaumvibe.mfe": "MFE",
+  "block.thaumvibe.mfsu": "MFSU",
+  
+  "block.thaumvibe.generator": "Generator",
+  "block.thaumvibe.solar_panel": "Solar Panel",
+  "block.thaumvibe.geothermal_generator": "Geothermal Generator",
+  "block.thaumvibe.nuclear_reactor": "Nuclear Reactor",
+  
+  "block.thaumvibe.stirling_engine": "Stirling Engine",
+  "block.thaumvibe.combustion_engine": "Combustion Engine",
+  "block.thaumvibe.steam_engine": "Steam Engine",
+  
+  "block.thaumvibe.quarry": "Quarry",
+  "block.thaumvibe.pump": "Pump",
+  "block.thaumvibe.filler": "Filler",
+  "block.thaumvibe.builder": "Builder",
+  "block.thaumvibe.assembly_table": "Assembly Table",
+  "block.thaumvibe.advanced_crafting_table": "Advanced Crafting Table",
+  "block.thaumvibe.tank": "Tank"
 }
