@@ -15,5 +15,10 @@ public class ModSpells {
         SpellRegistry.register(new IceShardSpell());
         SpellRegistry.register(new HealSpell());
         SpellRegistry.register(new ShieldSpell());
+        SpellRegistry.register(new ExplosionSpell());
+        SpellRegistry.register(new TeleportSpell());
+        SpellRegistry.register(new LeapSpell());
+        SpellRegistry.register(new VoidVortexSpell());
+        SpellRegistry.register(new ShockwaveSpell());
     }
 }
