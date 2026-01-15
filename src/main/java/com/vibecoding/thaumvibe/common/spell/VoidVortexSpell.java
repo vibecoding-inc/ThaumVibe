@@ -44,10 +44,11 @@ public class VoidVortexSpell implements Spell {
             Vec3 lookVec = player.getLookAngle();
             Vec3 centerPos = player.position().add(lookVec.scale(5.0));
             
+            double radius = 10.0;
             // Find all entities in a 10-block radius
-            AABB searchBox = new AABB(centerPos.subtract(10, 10, 10), centerPos.add(10, 10, 10));
+            AABB searchBox = new AABB(centerPos.subtract(radius, radius, radius), centerPos.add(radius, radius, radius));
             List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, searchBox, 
-                entity -> entity != player && entity.distanceToSqr(centerPos) < 100);
+                entity -> entity != player && entity.distanceToSqr(centerPos) < radius * radius);
             
             for (LivingEntity entity : entities) {
                 // Pull entity towards vortex center

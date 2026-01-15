@@ -39,19 +39,38 @@ public class TeleportSpell implements Spell {
             Vec3 lookVec = player.getLookAngle();
             Vec3 teleportPos = player.position().add(lookVec.scale(10.0));
             
-            // Ensure the player doesn't teleport into blocks
-            teleportPos = new Vec3(teleportPos.x, Math.max(teleportPos.y, player.getY()), teleportPos.z);
+            // Find a safe landing position
+            BlockPos targetPos = BlockPos.containing(teleportPos.x, teleportPos.y, teleportPos.z);
             
-            player.teleportTo(teleportPos.x, teleportPos.y, teleportPos.z);
-            player.fallDistance = 0.0F; // Prevent fall damage
+            // Check if the destination is safe (not solid blocks)
+            boolean isSafe = level.getBlockState(targetPos).isAir() && 
+                           level.getBlockState(targetPos.above()).isAir();
             
-            level.playSound(null, player.getX(), player.getY(), player.getZ(), 
-                SoundEvents.ENDERMAN_TELEPORT, SoundSource.PLAYERS, 1.0F, 1.0F);
+            if (!isSafe) {
+                // Try to find the nearest safe position above
+                for (int i = 0; i < 5; i++) {
+                    BlockPos checkPos = targetPos.above(i);
+                    if (level.getBlockState(checkPos).isAir() && level.getBlockState(checkPos.above()).isAir()) {
+                        targetPos = checkPos;
+                        isSafe = true;
+                        break;
+                    }
+                }
+            }
             
-            // Brief nausea effect for flavor
-            player.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 20, 0));
+            if (isSafe) {
+                player.teleportTo(targetPos.getX() + 0.5, targetPos.getY(), targetPos.getZ() + 0.5);
+                player.fallDistance = 0.0F; // Prevent fall damage
+                
+                level.playSound(null, player.getX(), player.getY(), player.getZ(), 
+                    SoundEvents.ENDERMAN_TELEPORT, SoundSource.PLAYERS, 1.0F, 1.0F);
+                
+                // Brief nausea effect for flavor
+                player.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 20, 0));
+                return true;
+            }
         }
-        return true;
+        return false;
     }
     
     @Override

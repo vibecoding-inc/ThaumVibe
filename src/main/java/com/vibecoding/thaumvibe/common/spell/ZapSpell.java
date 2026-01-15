@@ -43,7 +43,7 @@ public class ZapSpell implements Spell {
             // Raycast to find where the player is looking
             HitResult hitResult = player.pick(20.0D, 0.0F, false);
             Vec3 hitPos = hitResult.getLocation();
-            BlockPos strikePos = new BlockPos((int)hitPos.x, (int)hitPos.y, (int)hitPos.z);
+            BlockPos strikePos = BlockPos.containing(hitPos.x, hitPos.y, hitPos.z);
             
             // Summon lightning
             LightningBolt lightning = EntityType.LIGHTNING_BOLT.create(level);

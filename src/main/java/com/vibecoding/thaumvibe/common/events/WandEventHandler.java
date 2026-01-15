@@ -29,7 +29,9 @@ public class WandEventHandler {
             
             if (!player.level().isClientSide) {
                 CompoundTag tag = stack.getOrCreateTag();
-                String spellName = tag.getString("SelectedSpell");
+                String spellId = tag.getString("SelectedSpell");
+                com.vibecoding.thaumvibe.api.spell.Spell spell = com.vibecoding.thaumvibe.api.spell.SpellRegistry.getSpell(spellId);
+                String spellName = spell != null ? spell.getName() : spellId;
                 player.displayClientMessage(
                     Component.literal("§5Switched to spell: §d" + spellName), 
                     true

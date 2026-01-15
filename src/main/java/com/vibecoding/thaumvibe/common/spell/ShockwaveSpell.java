@@ -42,10 +42,11 @@ public class ShockwaveSpell implements Spell {
         if (!level.isClientSide) {
             Vec3 playerPos = player.position();
             
-            // Find all entities in a 8-block radius
-            AABB searchBox = new AABB(playerPos.subtract(8, 4, 8), playerPos.add(8, 4, 8));
+            double radius = 8.0;
+            // Find all entities in an 8-block radius
+            AABB searchBox = new AABB(playerPos.subtract(radius, 4, radius), playerPos.add(radius, 4, radius));
             List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, searchBox, 
-                entity -> entity != player && entity.distanceToSqr(playerPos) < 64);
+                entity -> entity != player && entity.distanceToSqr(playerPos) < radius * radius);
             
             for (LivingEntity entity : entities) {
                 // Knock entity away from player
