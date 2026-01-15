@@ -4,6 +4,16 @@ Vibecrafted Thaumcraft for MC 1.20.1
 ## About
 ThaumVibe is a recreation of the classic Thaumcraft mod for modern Minecraft (1.20.1) using Forge. This mod brings back the magical experience of Thaumaturgy with aspects, research, and mystical crafting.
 
+## ✨ NEW: Wand Spell System!
+
+ThaumVibe now features an exciting combat spell system! Cast powerful spells using your wand to devastate enemies or support yourself. Choose from **10 unique spells** including:
+
+- **Offensive:** Fireball, Zap, Ice Shard, Explosion, Void Vortex, Shockwave
+- **Defensive:** Shield, Heal
+- **Mobility:** Blink (Teleport), Leap
+
+**See [SPELL_SYSTEM.md](SPELL_SYSTEM.md) for complete spell documentation and combat strategies!**
+
 ## Core Thaumcraft Concepts
 
 ### Aspects System
