@@ -1,5 +1,6 @@
 package com.vibecoding.thaumvibe.core.init;
 
+import com.vibecoding.thaumvibe.ThaumVibe;
 import com.vibecoding.thaumvibe.api.aspects.Aspect;
 import com.vibecoding.thaumvibe.api.aspects.AspectList;
 import com.vibecoding.thaumvibe.api.aspects.AspectRegistry;
@@ -12,10 +13,15 @@ import net.minecraft.world.level.block.Blocks;
 public class ModAspects {
     
     public static void registerAspects() {
-        registerVanillaItems();
-        registerVanillaBlocks();
-        registerModItems();
-        registerModBlocks();
+        try {
+            registerVanillaItems();
+            registerVanillaBlocks();
+            registerModItems();
+            registerModBlocks();
+            ThaumVibe.LOGGER.info("Successfully registered all aspect mappings");
+        } catch (Exception e) {
+            ThaumVibe.LOGGER.error("Error registering aspect mappings", e);
+        }
     }
     
     private static void registerVanillaItems() {

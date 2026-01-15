@@ -1,15 +1,14 @@
 package com.vibecoding.thaumvibe.api.research;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Global manager for player research data.
  * Stores and retrieves research progress for all players.
  */
 public class ResearchManager {
-    private static final Map<UUID, PlayerResearch> PLAYER_RESEARCH = new HashMap<>();
+    private static final ConcurrentHashMap<UUID, PlayerResearch> PLAYER_RESEARCH = new ConcurrentHashMap<>();
     
     /**
      * Get or create research data for a player

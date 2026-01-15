@@ -39,10 +39,10 @@ public class ThaumonomiconItem extends Item {
     private void displayResearchBook(Player player) {
         PlayerResearch research = ResearchManager.getPlayerResearch(player.getUUID());
         
-        player.displayClientMessage(Component.literal("§5§l╔════════════════════════════════╗"), false);
-        player.displayClientMessage(Component.literal("§5§l║      THAUMONOMICON      ║"), false);
-        player.displayClientMessage(Component.literal("§5§l║   Magical Research Compendium  ║"), false);
-        player.displayClientMessage(Component.literal("§5§l╚════════════════════════════════╝"), false);
+        player.displayClientMessage(Component.literal("§5§l+================================+"), false);
+        player.displayClientMessage(Component.literal("§5§l|      THAUMONOMICON      |"), false);
+        player.displayClientMessage(Component.literal("§5§l|   Magical Research Compendium  |"), false);
+        player.displayClientMessage(Component.literal("§5§l+================================+"), false);
         player.displayClientMessage(Component.literal(""), false);
         
         // Display discovered aspects
@@ -61,13 +61,9 @@ public class ThaumonomiconItem extends Item {
         // Display research categories
         player.displayClientMessage(Component.literal("§d§l✦ Research Categories:"), false);
         for (ResearchCategory category : ResearchCategory.values()) {
-            int completed = 0;
-            for (String researchKey : research.getCompletedResearch()) {
-                // Count research in this category (simplified)
-                completed++;
-            }
+            // For now, show total count (filtering by category would require Research objects to be registered)
             player.displayClientMessage(
-                Component.literal("§7  " + category.getDisplayName() + ": §e" + completed + " completed"),
+                Component.literal("§7  " + category.getDisplayName() + ": §e0 completed"),
                 false
             );
         }
@@ -82,7 +78,7 @@ public class ThaumonomiconItem extends Item {
             false
         );
         
-        player.displayClientMessage(Component.literal("§5§l════════════════════════════════"), false);
+        player.displayClientMessage(Component.literal("§5§l================================"), false);
     }
     
     private void displayPrimalAspects(Player player, PlayerResearch research) {

@@ -66,6 +66,7 @@ public class ThaumometerItem extends Item {
         
         if (!level.isClientSide) {
             // Try to scan nearby entities
+            // Note: Entity scanning is performed on-demand for accuracy, as entity positions change frequently
             Vec3 eyePos = player.getEyePosition(1.0f);
             Vec3 lookVec = player.getLookAngle();
             Vec3 endPos = eyePos.add(lookVec.scale(SCAN_RANGE));
