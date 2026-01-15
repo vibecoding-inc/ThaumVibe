@@ -1,6 +1,7 @@
 package com.vibecoding.thaumvibe.core.init;
 
 import com.vibecoding.thaumvibe.ThaumVibe;
+import com.vibecoding.thaumvibe.common.items.ThaumonomiconItem;
 import com.vibecoding.thaumvibe.common.items.ThaumometerItem;
 import com.vibecoding.thaumvibe.common.items.WandItem;
 import net.minecraft.world.item.Item;
@@ -15,7 +16,7 @@ public class ModItems {
     
     // Basic Thaumcraft items
     public static final RegistryObject<Item> THAUMONOMICON = ITEMS.register("thaumonomicon",
-        () -> new Item(new Item.Properties()));
+        () -> new ThaumonomiconItem(new Item.Properties().stacksTo(1)));
     
     public static final RegistryObject<Item> THAUMOMETER = ITEMS.register("thaumometer",
         () -> new ThaumometerItem(new Item.Properties().stacksTo(1)));

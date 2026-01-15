@@ -1,11 +1,13 @@
 package com.vibecoding.thaumvibe;
 
+import com.vibecoding.thaumvibe.core.init.ModAspects;
 import com.vibecoding.thaumvibe.core.init.ModBlocks;
 import com.vibecoding.thaumvibe.core.init.ModCreativeTabs;
 import com.vibecoding.thaumvibe.core.init.ModItems;
 import com.vibecoding.thaumvibe.core.init.ModSpells;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,8 +27,19 @@ public class ThaumVibe {
         ModBlocks.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
         
+        // Register common setup event
+        modEventBus.addListener(this::commonSetup);
+        
         // Register spells
         ModSpells.registerSpells();
         LOGGER.info("Registered ThaumVibe spells");
+    }
+    
+    private void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            // Register aspects for items and blocks
+            ModAspects.registerAspects();
+            LOGGER.info("Registered ThaumVibe aspects");
+        });
     }
 }
