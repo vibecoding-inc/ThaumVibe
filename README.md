@@ -14,6 +14,16 @@ ThaumVibe now features an exciting combat spell system! Cast powerful spells usi
 
 **See [SPELL_SYSTEM.md](SPELL_SYSTEM.md) for complete spell documentation and combat strategies!**
 
+### Creative Mode Commands
+
+ThaumVibe includes commands for creative mode or testing that allow you to bypass wand limitations:
+
+- `/thaumvibe creative infinitevis` - Toggle infinite Vis for the held wand (no Vis consumption)
+- `/thaumvibe creative nocooldown` - Toggle cooldown bypass for the held wand (cast spells instantly)
+- `/thaumvibe creative all` - Toggle both infinite Vis and no cooldown modes at once
+
+These commands require operator permissions (level 2) and only work on wands held in your main hand. The creative mode status is shown in the wand's tooltip.
+
 ## Core Thaumcraft Concepts
 
 ### Aspects System
