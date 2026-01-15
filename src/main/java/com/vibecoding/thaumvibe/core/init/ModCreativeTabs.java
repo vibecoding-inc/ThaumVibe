@@ -32,6 +32,24 @@ public class ModCreativeTabs {
                 output.accept(ModItems.ORDER_SHARD.get());
                 output.accept(ModItems.ENTROPY_SHARD.get());
                 
+                // Aspect Infusion Crystals
+                output.accept(ModItems.INFUSION_AER.get());
+                output.accept(ModItems.INFUSION_TERRA.get());
+                output.accept(ModItems.INFUSION_IGNIS.get());
+                output.accept(ModItems.INFUSION_AQUA.get());
+                output.accept(ModItems.INFUSION_ORDO.get());
+                output.accept(ModItems.INFUSION_PERDITIO.get());
+                output.accept(ModItems.INFUSION_VACUOS.get());
+                output.accept(ModItems.INFUSION_LUX.get());
+                output.accept(ModItems.INFUSION_MOTUS.get());
+                output.accept(ModItems.INFUSION_GELUM.get());
+                output.accept(ModItems.INFUSION_VITREUS.get());
+                output.accept(ModItems.INFUSION_METALLUM.get());
+                output.accept(ModItems.INFUSION_VICTUS.get());
+                output.accept(ModItems.INFUSION_MORTUUS.get());
+                output.accept(ModItems.INFUSION_POTENTIA.get());
+                output.accept(ModItems.INFUSION_PRAECANTATIO.get());
+                
                 // MIDDLE GAME - Advanced materials
                 output.accept(ModItems.VIS_CRYSTAL.get());
                 output.accept(ModItems.ALCHEMICAL_BRASS.get());

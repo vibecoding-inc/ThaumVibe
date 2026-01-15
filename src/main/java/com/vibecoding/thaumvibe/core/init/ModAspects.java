@@ -224,6 +224,55 @@ public class ModAspects {
         
         AspectRegistry.registerItemAspects(ModItems.THAUMONOMICON.get(), 
             new AspectList().add(Aspect.PRAECANTATIO, 4).add(Aspect.VICTUS, 1));
+        
+        // Aspect Infusion Crystals
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_AER.get(), 
+            new AspectList().add(Aspect.AER, 8).add(Aspect.PRAECANTATIO, 2));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_TERRA.get(), 
+            new AspectList().add(Aspect.TERRA, 8).add(Aspect.PRAECANTATIO, 2));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_IGNIS.get(), 
+            new AspectList().add(Aspect.IGNIS, 8).add(Aspect.PRAECANTATIO, 2));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_AQUA.get(), 
+            new AspectList().add(Aspect.AQUA, 8).add(Aspect.PRAECANTATIO, 2));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_ORDO.get(), 
+            new AspectList().add(Aspect.ORDO, 8).add(Aspect.PRAECANTATIO, 2));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_PERDITIO.get(), 
+            new AspectList().add(Aspect.PERDITIO, 8).add(Aspect.PRAECANTATIO, 2));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_VACUOS.get(), 
+            new AspectList().add(Aspect.VACUOS, 6).add(Aspect.PRAECANTATIO, 3));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_LUX.get(), 
+            new AspectList().add(Aspect.LUX, 6).add(Aspect.PRAECANTATIO, 3));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_MOTUS.get(), 
+            new AspectList().add(Aspect.MOTUS, 6).add(Aspect.PRAECANTATIO, 3));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_GELUM.get(), 
+            new AspectList().add(Aspect.GELUM, 6).add(Aspect.PRAECANTATIO, 3));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_VITREUS.get(), 
+            new AspectList().add(Aspect.VITREUS, 6).add(Aspect.PRAECANTATIO, 3));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_METALLUM.get(), 
+            new AspectList().add(Aspect.METALLUM, 6).add(Aspect.PRAECANTATIO, 3));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_VICTUS.get(), 
+            new AspectList().add(Aspect.VICTUS, 6).add(Aspect.PRAECANTATIO, 3));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_MORTUUS.get(), 
+            new AspectList().add(Aspect.MORTUUS, 6).add(Aspect.PRAECANTATIO, 3));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_POTENTIA.get(), 
+            new AspectList().add(Aspect.POTENTIA, 6).add(Aspect.PRAECANTATIO, 3));
+        
+        AspectRegistry.registerItemAspects(ModItems.INFUSION_PRAECANTATIO.get(), 
+            new AspectList().add(Aspect.PRAECANTATIO, 10));
     }
     
     private static void registerModBlocks() {
