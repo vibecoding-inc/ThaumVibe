@@ -204,7 +204,40 @@ Vis is the magical energy that powers Thaumcraft devices. It flows through the w
 - ✅ Research framework
 - ✅ All progression tiers (Early/Mid/Late game items and blocks)
 - ✅ Core items (Wand, Thaumometer, Thaumonomicon)
+- ✅ **Wand spell system with 10 unique spells**
+- ✅ **Combat spell casting and cooldown system**
+- ✅ **Vis consumption and automatic recharge**
 - ⏳ Block functionality (crafting logic)
 - ⏳ Research GUI
 - ⏳ Aspect scanning mechanics
 - ⏳ World generation (ores, trees)
+
+## New Feature: Wand Spell System
+
+The wand is no longer just for crafting! Cast powerful combat spells:
+
+### Spell Categories
+1. **Offensive Spells** (6 spells)
+   - Fireball: Explosive projectile
+   - Zap: Lightning strike
+   - Ice Shard: Freezing projectile
+   - Explosion: Massive TNT blast
+   - Void Vortex: Pull and damage enemies
+   - Shockwave: Area knockback attack
+
+2. **Defensive Spells** (2 spells)
+   - Shield: Damage resistance + absorption
+   - Heal: Restore health + regeneration
+
+3. **Mobility Spells** (2 spells)
+   - Blink: Instant teleport forward
+   - Leap: Launch into the air
+
+### Key Features
+- **Vis-based casting**: Each spell costs Vis (15-40)
+- **Cooldown system**: Prevents spell spam (1.5-5 seconds)
+- **Spell cycling**: Shift+Right-Click to switch spells
+- **Auto-recharge**: Vis regenerates 1 per second
+- **Visual feedback**: Durability bar shows Vis level
+
+See [SPELL_SYSTEM.md](../SPELL_SYSTEM.md) for complete documentation!
