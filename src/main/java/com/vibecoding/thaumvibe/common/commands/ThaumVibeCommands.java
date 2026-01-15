@@ -31,16 +31,29 @@ public class ThaumVibeCommands {
         );
     }
     
-    private static int toggleInfiniteVis(CommandContext<CommandSourceStack> context) {
+    /**
+     * Validate that the player is holding a wand
+     * @return The held wand ItemStack, or null if validation fails
+     */
+    private static ItemStack validateWandInHand(CommandContext<CommandSourceStack> context) {
         Player player = context.getSource().getPlayer();
         if (player == null) {
             context.getSource().sendFailure(Component.literal("This command can only be used by players"));
-            return 0;
+            return null;
         }
         
         ItemStack heldItem = player.getMainHandItem();
         if (!(heldItem.getItem() instanceof WandItem)) {
             context.getSource().sendFailure(Component.literal("§cYou must be holding a wand to use this command!"));
+            return null;
+        }
+        
+        return heldItem;
+    }
+    
+    private static int toggleInfiniteVis(CommandContext<CommandSourceStack> context) {
+        ItemStack heldItem = validateWandInHand(context);
+        if (heldItem == null) {
             return 0;
         }
         
@@ -58,15 +71,8 @@ public class ThaumVibeCommands {
     }
     
     private static int toggleNoCooldown(CommandContext<CommandSourceStack> context) {
-        Player player = context.getSource().getPlayer();
-        if (player == null) {
-            context.getSource().sendFailure(Component.literal("This command can only be used by players"));
-            return 0;
-        }
-        
-        ItemStack heldItem = player.getMainHandItem();
-        if (!(heldItem.getItem() instanceof WandItem)) {
-            context.getSource().sendFailure(Component.literal("§cYou must be holding a wand to use this command!"));
+        ItemStack heldItem = validateWandInHand(context);
+        if (heldItem == null) {
             return 0;
         }
         
@@ -84,15 +90,8 @@ public class ThaumVibeCommands {
     }
     
     private static int toggleAll(CommandContext<CommandSourceStack> context) {
-        Player player = context.getSource().getPlayer();
-        if (player == null) {
-            context.getSource().sendFailure(Component.literal("This command can only be used by players"));
-            return 0;
-        }
-        
-        ItemStack heldItem = player.getMainHandItem();
-        if (!(heldItem.getItem() instanceof WandItem)) {
-            context.getSource().sendFailure(Component.literal("§cYou must be holding a wand to use this command!"));
+        ItemStack heldItem = validateWandInHand(context);
+        if (heldItem == null) {
             return 0;
         }
         

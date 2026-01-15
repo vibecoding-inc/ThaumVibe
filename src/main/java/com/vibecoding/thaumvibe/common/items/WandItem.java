@@ -146,8 +146,10 @@ public class WandItem extends Item {
                     setCurrentVis(itemStack, currentVis - visCost);
                 }
                 
-                // Set cooldown
-                setCooldown(itemStack, level, spell.getCooldown());
+                // Set cooldown only if not in no cooldown mode
+                if (!tag.getBoolean("NoCooldown")) {
+                    setCooldown(itemStack, level, spell.getCooldown());
+                }
                 
                 // Update durability bar for visual feedback
                 itemStack.setDamageValue(MAX_VIS - getCurrentVis(itemStack));
