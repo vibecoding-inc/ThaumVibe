@@ -3,6 +3,7 @@ package com.vibecoding.thaumvibe;
 import com.vibecoding.thaumvibe.core.init.ModBlocks;
 import com.vibecoding.thaumvibe.core.init.ModCreativeTabs;
 import com.vibecoding.thaumvibe.core.init.ModItems;
+import com.vibecoding.thaumvibe.core.init.ModSpells;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -23,5 +24,9 @@ public class ThaumVibe {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
+        
+        // Register spells
+        ModSpells.registerSpells();
+        LOGGER.info("Registered ThaumVibe spells");
     }
 }
