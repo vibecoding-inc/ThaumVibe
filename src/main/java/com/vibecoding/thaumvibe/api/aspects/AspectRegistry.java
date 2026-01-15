@@ -4,16 +4,15 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Registry for aspect mappings of items and blocks.
  * Determines what aspects each item/block contains.
  */
 public class AspectRegistry {
-    private static final Map<Item, AspectList> ITEM_ASPECTS = new HashMap<>();
-    private static final Map<Block, AspectList> BLOCK_ASPECTS = new HashMap<>();
+    private static final ConcurrentHashMap<Item, AspectList> ITEM_ASPECTS = new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<Block, AspectList> BLOCK_ASPECTS = new ConcurrentHashMap<>();
     
     /**
      * Register aspects for an item
