@@ -26,7 +26,7 @@ public class FireballSpellEntity extends AbstractHurtingProjectile {
         super.onHitEntity(result);
         if (!this.level().isClientSide) {
             if (result.getEntity() instanceof LivingEntity target) {
-                target.hurt(this.damageSources().fireball(this, this.getOwner()), 6.0F);
+                target.hurt(this.damageSources().thrown(this, this.getOwner()), 6.0F);
                 target.setSecondsOnFire(3);
             }
             this.explodeAndRemove();
