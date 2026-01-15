@@ -4,9 +4,20 @@ Vibecrafted Thaumcraft for MC 1.20.1
 ## About
 ThaumVibe is a recreation of the classic Thaumcraft mod for modern Minecraft (1.20.1) using Forge. This mod brings back the magical experience of Thaumaturgy with aspects, research, and mystical crafting.
 
-## ✨ NEW: Wand Spell System!
+## ✨ NEW: Research & Discovery System!
 
-ThaumVibe now features an exciting combat spell system! Cast powerful spells using your wand to devastate enemies or support yourself. Choose from **10 unique spells** including:
+**Discover the magical world with the Thaumometer and Thaumonomicon!**
+
+- 🔍 **Thaumometer**: Scan blocks, items, and entities to discover their magical aspects
+- 📖 **Thaumonomicon**: Track your research progress and discovered aspects
+- ⚗️ **16 Unique Aspects**: 6 primal aspects and 10 compound aspects to discover
+- 🎯 **Progressive Discovery**: Scan everything from dirt to diamonds to unlock all aspects
+
+**See [THAUMOMETER_IMPLEMENTATION.md](THAUMOMETER_IMPLEMENTATION.md) for complete documentation!**
+
+## ✨ Wand Spell System!
+
+ThaumVibe features an exciting combat spell system! Cast powerful spells using your wand to devastate enemies or support yourself. Choose from **10 unique spells** including:
 
 - **Offensive:** Fireball, Zap, Ice Shard, Explosion, Void Vortex, Shockwave
 - **Defensive:** Shield, Heal

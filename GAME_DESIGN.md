@@ -207,9 +207,11 @@ Vis is the magical energy that powers Thaumcraft devices. It flows through the w
 - ✅ **Wand spell system with 10 unique spells**
 - ✅ **Combat spell casting and cooldown system**
 - ✅ **Vis consumption and automatic recharge**
+- ✅ **Aspect scanning mechanics (Thaumometer)**
+- ✅ **Aspect discovery and tracking**
+- ✅ **Research tracking (Thaumonomicon)**
 - ⏳ Block functionality (crafting logic)
 - ⏳ Research GUI
-- ⏳ Aspect scanning mechanics
 - ⏳ World generation (ores, trees)
 
 ## New Feature: Wand Spell System
