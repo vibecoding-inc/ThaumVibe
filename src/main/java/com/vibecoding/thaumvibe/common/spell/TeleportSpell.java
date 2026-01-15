@@ -1,6 +1,7 @@
 package com.vibecoding.thaumvibe.common.spell;
 
 import com.vibecoding.thaumvibe.api.spell.Spell;
+import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffectInstance;
