@@ -25,6 +25,31 @@ ThaumVibe features an exciting combat spell system! Cast powerful spells using y
 
 **See [SPELL_SYSTEM.md](SPELL_SYSTEM.md) for complete spell documentation and combat strategies!**
 
+## ✨ NEW: Aspect Infusion System!
+
+**Infuse yourself with the power of aspects!**
+
+Consume crystallized aspect infusions to temporarily gain magical buffs with spectacular particle effects. Each of the **16 aspects** grants unique themed abilities:
+
+- 💨 **Aer**: Speed, Jump Boost, Slow Falling
+- 🪨 **Terra**: Resistance, Strength, Absorption
+- 🔥 **Ignis**: Fire Resistance, Enhanced Strength
+- 💧 **Aqua**: Water Breathing, Regeneration, Dolphin's Grace
+- ⚖️ **Ordo**: Luck, Protection, Absorption
+- ⚡ **Perditio**: Extreme Strength (with risk!)
+- 🌫️ **Vacuos**: Invisibility, Night Vision, Speed
+- ✨ **Lux**: Night Vision, Glowing, Luck
+- 🏃 **Motus**: Maximum Speed, Haste, Jump Boost
+- ❄️ **Gelum**: Frost Walker, Resistance, Fire Immunity
+- 💎 **Vitreus**: Maximum Absorption, Resistance
+- 🛡️ **Metallum**: Maximum Resistance, Strength
+- ❤️ **Victus**: Regeneration, Health Boost, Saturation
+- 💀 **Mortuus**: Enhanced Strength, Wither Immunity
+- ⚡ **Potentia**: Maximum Haste, Speed, Regeneration
+- 🔮 **Praecantatio**: Ultimate all-around magical enhancement
+
+**See [ASPECT_INFUSION.md](ASPECT_INFUSION.md) for complete infusion guide and strategies!**
+
 ### Creative Mode Commands
 
 ThaumVibe includes commands for creative mode or testing that allow you to bypass wand limitations:
