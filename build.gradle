@@ -24,7 +24,10 @@ base {
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 minecraft {
-    mappings channel: 'parchment', version: "${project.parchment_minecraft_version}-${project.parchment_mappings_version}-${project.minecraft_version}"
+    // Using official mappings temporarily due to parchment compatibility issues with ForgeGradle 6.0
+    // TODO: Re-enable parchment mappings when compatibility is resolved
+    mappings channel: 'official', version: project.minecraft_version
+    // mappings channel: 'parchment', version: "${project.parchment_minecraft_version}-${project.parchment_mappings_version}-${project.minecraft_version}"
     
     runs {
         client {
