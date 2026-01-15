@@ -86,6 +86,10 @@ public class WandItem extends Item {
      */
     private boolean isOnCooldown(ItemStack stack, Level level) {
         CompoundTag tag = stack.getOrCreateTag();
+        // Check if no cooldown mode is enabled
+        if (tag.getBoolean("NoCooldown")) {
+            return false;
+        }
         long lastCast = tag.getLong(LAST_CAST_TAG);
         return (level.getGameTime() - lastCast) < tag.getInt(COOLDOWN_TAG);
     }
@@ -123,7 +127,11 @@ public class WandItem extends Item {
             int currentVis = getCurrentVis(itemStack);
             int visCost = spell.getVisCost();
             
-            if (currentVis < visCost) {
+            // Check if infinite vis mode is enabled
+            CompoundTag tag = itemStack.getOrCreateTag();
+            boolean infiniteVis = tag.getBoolean("InfiniteVis");
+            
+            if (!infiniteVis && currentVis < visCost) {
                 player.displayClientMessage(
                     Component.literal("§cNot enough Vis! Need " + visCost + ", have " + currentVis), 
                     true
@@ -133,11 +141,15 @@ public class WandItem extends Item {
             
             // Cast the spell
             if (spell.cast(level, player)) {
-                // Consume Vis
-                setCurrentVis(itemStack, currentVis - visCost);
+                // Consume Vis only if not in infinite vis mode
+                if (!infiniteVis) {
+                    setCurrentVis(itemStack, currentVis - visCost);
+                }
                 
-                // Set cooldown
-                setCooldown(itemStack, level, spell.getCooldown());
+                // Set cooldown only if not in no cooldown mode
+                if (!tag.getBoolean("NoCooldown")) {
+                    setCooldown(itemStack, level, spell.getCooldown());
+                }
                 
                 // Update durability bar for visual feedback
                 itemStack.setDamageValue(MAX_VIS - getCurrentVis(itemStack));
@@ -162,8 +174,21 @@ public class WandItem extends Item {
         String spellId = getSelectedSpell(stack);
         Spell spell = SpellRegistry.getSpell(spellId);
         
+        CompoundTag tag = stack.getOrCreateTag();
+        boolean infiniteVis = tag.getBoolean("InfiniteVis");
+        boolean noCooldown = tag.getBoolean("NoCooldown");
+        
         tooltipComponents.add(Component.literal("§7A magical wand for casting spells"));
-        tooltipComponents.add(Component.literal("§9Vis: " + currentVis + "/" + MAX_VIS));
+        
+        if (infiniteVis) {
+            tooltipComponents.add(Component.literal("§9Vis: §6∞ (Infinite)"));
+        } else {
+            tooltipComponents.add(Component.literal("§9Vis: " + currentVis + "/" + MAX_VIS));
+        }
+        
+        if (noCooldown) {
+            tooltipComponents.add(Component.literal("§eCooldowns: §6Disabled"));
+        }
         
         if (spell != null) {
             tooltipComponents.add(Component.literal("§5Selected Spell: §d" + spell.getName()));
