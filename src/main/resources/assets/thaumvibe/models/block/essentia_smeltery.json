@@ -1,6 +1,35 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/block",
   "textures": {
-    "all": "thaumvibe:block/essentia_smeltery"
-  }
+    "particle": "thaumvibe:block/essentia_smeltery",
+    "top": "thaumvibe:block/essentia_smeltery_top",
+    "side": "thaumvibe:block/essentia_smeltery",
+    "front": "thaumvibe:block/essentia_smeltery_front",
+    "bottom": "minecraft:block/stone"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 14, 16],
+      "faces": {
+        "down": {"uv": [0, 0, 16, 16], "texture": "#bottom"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+        "north": {"uv": [0, 2, 16, 16], "texture": "#front"},
+        "south": {"uv": [0, 2, 16, 16], "texture": "#side"},
+        "west": {"uv": [0, 2, 16, 16], "texture": "#side"},
+        "east": {"uv": [0, 2, 16, 16], "texture": "#side"}
+      }
+    },
+    {
+      "from": [2, 14, 2],
+      "to": [14, 16, 14],
+      "faces": {
+        "up": {"uv": [2, 2, 14, 14], "texture": "#top"},
+        "north": {"uv": [2, 0, 14, 2], "texture": "#side"},
+        "south": {"uv": [2, 0, 14, 2], "texture": "#side"},
+        "west": {"uv": [2, 0, 14, 2], "texture": "#side"},
+        "east": {"uv": [2, 0, 14, 2], "texture": "#side"}
+      }
+    }
+  ]
 }
