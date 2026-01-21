@@ -1,6 +1,53 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/block",
   "textures": {
-    "all": "thaumvibe:block/eldritch_obelisk"
-  }
+    "particle": "thaumvibe:block/eldritch_obelisk",
+    "side": "thaumvibe:block/eldritch_obelisk",
+    "top": "thaumvibe:block/eldritch_obelisk_top",
+    "eye": "thaumvibe:block/eldritch_obelisk_eye"
+  },
+  "elements": [
+    {
+      "from": [3, 0, 3],
+      "to": [13, 16, 13],
+      "faces": {
+        "down": {"uv": [3, 3, 13, 13], "texture": "#side"},
+        "up": {"uv": [3, 3, 13, 13], "texture": "#top"},
+        "north": {"uv": [3, 0, 13, 16], "texture": "#side"},
+        "south": {"uv": [3, 0, 13, 16], "texture": "#side"},
+        "west": {"uv": [3, 0, 13, 16], "texture": "#side"},
+        "east": {"uv": [3, 0, 13, 16], "texture": "#side"}
+      }
+    },
+    {
+      "from": [5, 6, 2.9],
+      "to": [11, 10, 3.1],
+      "faces": {
+        "north": {"uv": [5, 6, 11, 10], "texture": "#eye"},
+        "south": {"uv": [5, 6, 11, 10], "texture": "#eye"}
+      }
+    },
+    {
+      "from": [2, 14, 4],
+      "to": [14, 18, 12],
+      "faces": {
+        "up": {"uv": [2, 4, 14, 12], "texture": "#top"},
+        "north": {"uv": [2, 12, 14, 16], "texture": "#side"},
+        "south": {"uv": [2, 12, 14, 16], "texture": "#side"},
+        "west": {"uv": [4, 12, 12, 16], "texture": "#side"},
+        "east": {"uv": [4, 12, 12, 16], "texture": "#side"}
+      }
+    },
+    {
+      "from": [4, 18, 6],
+      "to": [12, 20, 10],
+      "faces": {
+        "up": {"uv": [4, 6, 12, 10], "texture": "#top"},
+        "north": {"uv": [4, 14, 12, 16], "texture": "#top"},
+        "south": {"uv": [4, 14, 12, 16], "texture": "#top"},
+        "west": {"uv": [6, 14, 10, 16], "texture": "#top"},
+        "east": {"uv": [6, 14, 10, 16], "texture": "#top"}
+      }
+    }
+  ]
 }
