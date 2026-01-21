@@ -24,7 +24,7 @@
       "from": [1, 1, 1],
       "to": [15, 2, 15],
       "faces": {
-        "up": {"uv": [1, 1, 15, 15], "texture": "#bottom", "tintindex": 0}
+        "up": {"uv": [1, 1, 15, 15], "texture": "#bottom"}
       }
     },
     {
